@@ -87,7 +87,7 @@ a{
 }
 
 
-/* MAIN - HERO SLIDER */
+/* HERO SLIDER */
 
 .heroe-slider{
     background-color: #94D2AA;
@@ -115,7 +115,7 @@ a{
     font-weight: 400;
     background-color: #ffffff;
     border-radius: 5px;
-    padding: 10px;
+    padding: 5px;
 }
 
 .heroe-slider p{
@@ -163,6 +163,7 @@ a{
     color: #3C2313;
     font-weight: 700;
     padding: 10px;
+    text-align: center;
 }
 
 .features p{
@@ -177,7 +178,7 @@ a{
     justify-content: space-around;
     max-width: 1200px;
     margin: 0 auto;
-    flex-grow: 1;
+    
 }
 
 .card-1, .card-2, .card-3{
@@ -189,6 +190,7 @@ a{
     font-size: 15px;
     font-weight: 500;
     text-align: center;
+    padding-bottom: 5px;
 }
 
 .card-1 p, .card-2 p, .card-3 p{
@@ -196,6 +198,7 @@ a{
     font-size: 15px;
     font-weight: 500;
     text-align: center;
+    padding-bottom: 5px;
 }
 
 
@@ -214,9 +217,11 @@ a{
     padding: 25px 0px 25px 0px;
 }
 
-.footer-contact-info{
-    display: flex;
-    flex-direction: column;
+.top-footer h4{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
 }
 
 .top-footer span{
@@ -224,20 +229,122 @@ a{
     font-size: 10px;
 }
 
-.location h4, .phone h4, .email h4{
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 20px;
-    text-transform: uppercase;
+.location, .phone, .email{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.location-text, .phone-text, .email-text{
+    padding-left: 10px;
 }
 
 .legal-footer{
     background-color: #222222;
 }
 
-
 .legal-footer p{
     color: #ffffff;
     padding: 10px;
     text-align: center;
+}
+
+
+
+/* DESKTOP */
+
+@media screen and (min-width: 800px){
+    .checkbtn{
+        display: none;
+    }
+
+    #check{
+        display: none;
+    }
+}
+
+
+
+/* Mobile */
+
+@media screen and (max-width: 480px){
+
+    /* HEADER */
+
+    .top-header{
+        display: none;
+    }
+
+    .main-header-logo {
+       padding: 15px;  
+    }
+
+    .main-header-nav ul{
+        display: none;
+    }
+
+    .checkbtn{
+        font-size: 25px;
+        color: #ffffff;
+        padding: 50px 20px 50px 0px;
+    }
+
+    #check{
+        display: none;
+    }
+
+    /* HERO */
+
+    .container-slider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        height: 400px;
+    }
+
+    .container-slider span{
+  
+    }
+
+    /* FEATURES PRODUCTS */
+    .products{
+        height: auto;
+    }
+
+   .container-cards{
+    
+    flex-direction: column;
+    align-items: center;
+    max-width: 80%;
+   }
+
+   .card-1, .card-2, .card-3{
+       padding-bottom: 30px;
+       margin-bottom: 15px;
+   }
+
+   .container-top-footer{
+       flex-direction: column-reverse;
+   }
+
+   /* FOOTER */
+
+   .footer-logo{
+       padding-top: 10px;
+       padding-bottom: 40px;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

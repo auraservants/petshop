@@ -29,11 +29,14 @@
         <div class="main-header">
             <div class="container-main-header">
                 <div class="main-header-logo">
-                    <h1><img src="images/Cat-.png" alt="gato">Front<span style="color: #ffffff;">Cat&Dog</span><img
-                            src="images/Dog.png" alt="perro"></h1>
+                    <h1><img src="images/Cat-.png" alt="gato">Front<span style="color: #ffffff;">Cat&Dog</span><img src="images/Dog.png" alt="perro"></h1>
                 </div>
                 <div class="main-header-nav">
                     <nav>
+                        <input type="checkbox" id="check">
+                        <label for="check" class="checkbtn">
+                            <i class="fas fa-bars"></i>
+                        </label>
                         <ul>
                             <li><a href="#"><i class="fas fa-paw"></i> Categorías</a></li>
                             <li><a href="#"><i class="fas fa-paw"></i> Pets</a></li>
@@ -85,39 +88,44 @@
     <!--FOOTER-->
     <footer>
         <div class="top-footer">
-
             <div class="container-top-footer">
-
-                <div class="footer-contact-info">
+                <div class="container-contact-info">
                     <div class="location">
-                        <img src="images/Icono-location.png" alt="icono ubicación">
-                        <h4>Localidad</h4>
-                        <span>Calle - provincia</span>
+                        <div class="location-icon">
+                            <img src="images/Icono-location.png" alt="icono ubicación">
+                        </div>
+                        <div class="location-text">
+                            <h4>Localidad</h4>
+                            <span>Calle - provincia</span>
+                        </div>
                     </div>
-
                     <div class="phone">
-                        <img src="images/Icono-tel.png" alt="icono teléfono">
-                        <h4>teléfono</h4>
-                        <span>Número de teléfono</span>
+                        <div class="phone-icon">
+                            <img src="images/Icono-tel.png" alt="icono teléfono">
+                        </div>
+                        <div class="phone-text">
+                            <h4>teléfono</h4>
+                            <span>Número de teléfono</span>
+                        </div>
                     </div>
-
                     <div class="email">
-                        <img src="images/Icono-email.png" alt="icono email">
-                        <h4>Correo Electrónico</h4>
-                        <span>Dirección de correo</span>
+                        <div class="email-icon">
+                            <img src="images/Icono-email.png" alt="icono email">
+                        </div>
+                        <div class="email-text">
+                            <h4>Correo Electrónico</h4>
+                            <span>Dirección de correo</span>
+                        </div>
                     </div>
                 </div>
-
+                
                 <div class="footer-logo">
                     <img src="images/Logo-footer.png" alt="logo">
                 </div>
-
             </div>
-
-            <div class="legal-footer">
-                <p>Todos los derechos reservados Front End</p>
-            </div>
-
+        </div>
+        <div class="legal-footer">
+            <p>Todos los derechos reservados Front End</p>
         </div>
     </footer>
 </body>
