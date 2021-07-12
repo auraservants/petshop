@@ -247,6 +247,7 @@ input[type=text], input[type=email], input[type=tel]{
     box-sizing: border-box;
     margin-top: 5px;
     margin-bottom: 15px;
+
 }
 
 
@@ -270,7 +271,7 @@ input::placeholder{
     padding-bottom: 50px;
 }
 
-input[type=submit]{
+.contact-btn input[type=submit]{
     background-color: #F0A83E;
     border: none;
     font-family: 'Roboto', sans-serif;
@@ -283,9 +284,15 @@ input[type=submit]{
     box-sizing: border-box;
     margin-top: 15px;
     margin-bottom: 15px;
+    cursor: pointer;
 }
 
-input[type=reset]{
+.contact-btn input[type=submit]:hover{
+    background-color: #bb8637;
+    transition: 0.7s;
+}
+
+.contact-btn input[type=reset]{
     background-color:#8A8787;
     font-family: 'Roboto', sans-serif;
     border: none;
@@ -298,6 +305,12 @@ input[type=reset]{
     box-sizing: border-box;
     margin-top: 15px;
     margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.contact-btn input[type=reset]:hover{
+    background-color:#747171;
+    transition: 0.7s;
 }
 
 /* FOOTER */
@@ -357,6 +370,11 @@ input[type=reset]{
     border: none;
     border-radius: 45px;
     color: #ffffff;
+    cursor: pointer;
+}
+.newsletter-form-content input[type=submit]:hover{
+    background-color: #2a170b;
+    transition: 0.7s;
 }
 
 .top-footer{
