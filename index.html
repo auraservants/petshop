@@ -29,7 +29,8 @@
         <div class="main-header">
             <div class="container-main-header">
                 <div class="main-header-logo">
-                    <h1><img src="images/Cat-.png" alt="gato">Front<span style="color: #ffffff;">Cat&Dog</span><img src="images/Dog.png" alt="perro"></h1>
+                    <h1><img src="images/Cat-.png" alt="gato">Front<span style="color: #ffffff;">Cat&Dog</span><img
+                            src="images/Dog.png" alt="perro"></h1>
                 </div>
                 <div class="main-header-nav">
                     <nav>
@@ -38,10 +39,10 @@
                             <i class="fas fa-bars"></i>
                         </label>
                         <ul>
-                            <li><a href="#"><i class="fas fa-paw"></i> Categorías</a></li>
-                            <li><a href="#"><i class="fas fa-paw"></i> Pets</a></li>
-                            <li><a href="#"><i class="fas fa-paw"></i> Nosotros</a></li>
-                            <li><a href="#"><i class="fas fa-paw"></i> Contactanos</a></li>
+                            <li class="menu-item"><a href="#">Categorías</a></li>
+                            <li class="menu-item"><a href="#">Pets</a></li>
+                            <li class="menu-item"><a href="#">Nosotros</a></li>
+                            <li class="menu-item"><a href="#">Contactanos</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -84,9 +85,64 @@
                 </div>
             </div>
         </section>
+        <!--CONTACTO-->
+        <section class="contact">
+            <h3 class="contact-title">Contáctanos</h3>
+            <div class="contact-container">
+                <form action="" method="POST">
+                    <div class="contact-name">
+                        <div class="contact-name-label">
+                            <label for="fullname">Nombre y Apellido* (Obligatorio)</label>
+                        </div>
+                        <input type="text" id="fullname" name="fullname" placeholder="Juan Peréz" required>
+                    </div>
+                    <div class="contact-email">
+                        <div class="contact-email-label">
+                            <label for="email">Correo electrónico* (Obligatorio)</label>
+                        </div>
+                        <input type="email" name="email" id="email" placeholder="tuemail@ejemplo.com" required>
+                    </div>
+
+                    <div class="contact-tel">
+                        <div class="contact-tel-label">
+                            <label for="phone">Teléfono</label>
+                        </div>
+                        <input type="tel" name="phone" id="phone" placeholder="+54 11 0000 0000">
+                    </div>
+
+                    <div class="contact-btn">
+                        <input type="reset" value="Resetear">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+
+            </div>
+
+        </section>
+
+
+
     </main>
     <!--FOOTER-->
     <footer>
+        <div class="footer-newsletter">
+            <div class="newsletter-container">
+                <div class="newsletter-text">
+                    <img src="/images/enviar-correo 1.png" alt="imagen de email en vector">
+                    <span class="newsletter-title">Suscríbete para más novedades</span>
+                </div>
+
+                <div class="newsletter-form">
+                    <form action="" method="POST">
+                        <div class="newsletter-form-content">
+                            <input type="email" id="newsletter-email" name="newsletter-email" placeholder="Ingresa tu correo electrónico" required>
+                            <input type="submit" value="Suscribirme">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
         <div class="top-footer">
             <div class="container-top-footer">
                 <div class="container-contact-info">
@@ -118,7 +174,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="footer-logo">
                     <img src="images/Logo-footer.png" alt="logo">
                 </div>
